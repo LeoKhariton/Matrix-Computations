@@ -3,6 +3,7 @@
 1. [Приведение пары матриц к форме Хессенберга](https://github.com/LeoKhariton/Matrix-Computations/tree/main?tab=readme-ov-file#приведение-пары-матриц-к-форме-хессенберга);
 3. [Приведение пары матриц к обобщенной форме Шура](https://github.com/LeoKhariton/Matrix-Computations/tree/main?tab=readme-ov-file#приведение-пары-матриц-к-обобщенной-форме-шура);
 4. [Решение непрерывного уравнения Сильвестра методом Голуба-Нэша-Ван-Лоана](https://github.com/LeoKhariton/Matrix-Computations/tree/main?tab=readme-ov-file#приведение-пары-матриц-к-форме-хессенберга).
+Описание данных алгоритмов представлено в книге "Matrix Computations" (Golub, Van Loan, 1996).
 ## Приведение пары матриц к форме Хессенберга
 ```math
 Q^T A Z = H
