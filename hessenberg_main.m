@@ -1,28 +1,24 @@
-function hessenberg-main()
+function hessenberg_main()
     clc; clearvars;
     n = 5;
-    A1 = rand(n);
-    A2 = rand(n);
+    A = rand(n);
+    B = rand(n);
     fprintf('Исходная пара матриц:\n');
-    catmat(A1, A2);
-    %приводим матрицу А1 к форме Хессенберга, а матрицу А2 к треугольному виду
+    catmat(A, B);
+    %приводим матрицу А к форме Хессенберга, а матрицу B к треугольному виду
     fprintf('\nМатрицы были приведены к форме Хессенберга:\n');
-    [AA, BB, Q, Z]=hessenberg(A1, A2);
+    [AA, BB, Q, Z] = hessenberg(A, B);
     catmat(AA, BB);
     fprintf('\nТрансформирующие матрицы Q и Z:\n');
     catmat(Q, Z);
-    fprintf('\nПроверка:\n');
-    catmat(Q'*A1*Z-AA, Q'*A2*Z-BB);
-    Q'*A1*Z-AA
-    Q'*A2*Z-BB
-%     fprintf('\nПроверка матриц Q и Z на ортогональность:\n');
-%     catmat(Q'*Q, Z'*Z);
-    fprintf('\nПроверка невязки Q и Z\n');
-    catmat(Q*Q'- eye(n), Z*Z'- eye(n));
-    Q*Q'- eye(n)
-    Z*Z'- eye(n)
-    %с помощью встроенной функции matlab
-    [AA, BB, Q, Z] = hess(A1, A2);
+    fprintf('\nПроверка невязок для А и В:\n');
+    disp(Q'*A*Z-AA);%проверка невязки для А
+    disp(Q'*B*Z-BB);%проверка невязки для В
+    fprintf('\nПроверка матриц Q и Z на ортогональность:\n');
+    disp(Q*Q'- eye(n));
+    disp(Z*Z'- eye(n));
+    %решение с помощью встроенной функции matlab
+    [AA, BB, Q, Z] = hess(A, B);
     fprintf('\nМатрицы были приведены к форме Хессенберга с помощью встроенной функции:\n');
     catmat(AA, BB);
     fprintf('\nМатрицы Q и Z:\n');
