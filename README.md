@@ -4,7 +4,7 @@
 3. Приведение пары матриц к обобщенной форме Шура;
 4. Решение непрерывного уравнения Сильвестра методом Голуба-Нэша-Ван-Лоана.
 
-Описание данных алгоритмов представлено в книге ["Matrix Computations" (Golub, Van Loan, 1996)](https://github.com/LeoKhariton/Matrix-Computations/blob/main/Golub%20G.H.%2C%20Van%20Loan%20C.F.%20-%20Matrix%20Computations%20(1996).pdf).
+Описание данных алгоритмов представлено в книге [«Matrix Computations» (Golub, Van Loan, 1996)](https://github.com/LeoKhariton/Matrix-Computations/blob/main/Golub%20G.H.%2C%20Van%20Loan%20C.F.%20-%20Matrix%20Computations%20(1996).pdf).
 ## Приведение пары матриц к форме Хессенберга
 Две квадратные матрицы $A$ и $B$ с помощью унитарных (ортогональных) преобразований (вращений Гивенса) приводятся к форме Хессенберга:
 ```math
