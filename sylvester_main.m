@@ -9,7 +9,8 @@ Y = zeros(n, m);
 
 %решение встроенной функцией matlab
 disp('Решение встроенной функцией: X =');
-disp(sylvester(A,B,C));
+disp(sylvester(A,B,C));%начиная с версии 2014
+disp(sylv(A,B,C));
 
 [Q_hess, A_hess] = hess(A);
 [Q_shur, B_shur] = schur(B');
